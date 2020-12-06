@@ -1,29 +1,24 @@
+const menu = document.querySelector('.memu-nav');
+const prise = document.querySelector('.nav-pris');
+const img = document.querySelector('#price');
+const prisNone = document.querySelector('.pris-none');
 
-var menu = document.querySelector('.pris-none');
 document.querySelector('.memu-nav').onclick = function () {
 	document.removeChild(menu);
 };
-
-
-
-
-
-
-
-
-
-
-
 document.querySelector('#sort-asc').onclick = function () {
 	mySort('data-price'); //находим кнопку по id и вешаем событие mySort по возрастанию
+	prise.classList.remove('pris-none');
+	img.classList.remove('btnRotete');
 }
 document.querySelector('#sort-desc').onclick = function () {
 	mySortDesc('data-price'); //находим кнопку по id и вешаем событие mySortDesc по убыванию
+	prise.classList.remove('pris-none');
+	img.classList.remove('btnRotete');
 }
 document.querySelector('#sort-dos').onclick = function () {
 	mySort('data-god'); //если надо по убыванию, то просто нужно mySortDesc
 }
-
 function mySort(sortType) { //(параметр)
 	let card = document.querySelector('.card'); //находим массив по class (родитель)
 	for (let i = 0; i < card.children.length; i++) {
@@ -48,7 +43,11 @@ function mySortDesc(sortType) {
 		}
 	}
 }
-
 function insertAfter(elem, refElem) {
 	return refElem.parentNode.insertBefore(elem, refElem.nextSibling); //функция коротая меняет местами элементы родителя в нужной последовательности
 }
+menu.addEventListener('click', function () {
+	prise.classList.toggle('pris-none');
+	img.classList.toggle('btnRotete');
+});
+

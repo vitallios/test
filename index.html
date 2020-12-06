@@ -55,13 +55,12 @@
 							Цена
 							<img src="/img/btn.svg" alt="btn" id="price" class="btn">
 						</a>
-						<ul class="nav-pris pris-none" id="nav-pris">
+						<ul class="nav-pris" id="nav-pris">
 							<li>
 								<a href="#" id="sort-asc" class="pri">
 									Цене по возрастанию
 								</a>
 							</li>
-
 							<li>
 								<a href="#" id="sort-desc" class="pri">
 									Цене по убыванию
@@ -70,9 +69,23 @@
 						</ul>
 					</li>
 				</ul>
-				<a href="#" id="sort-dos" class="pris">Возраст по возрастанию
-					<img src="/img/btn.svg" alt="btn" id="age" class="btn">
-				</a>
+				<ul class="age-menu">
+					<li>
+						<a href="#" id="sort-dos" class="age-menu">Возраст
+							<img src="/img/btn.svg" alt="btn" id="age" class="btn">
+						</a>
+						<ul class="age">
+							<li>
+								<a href="">по возрастанию</a>
+							</li>
+							<li>
+								<a href="">по убыванию</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+
 			</div>
 
 
@@ -277,7 +290,9 @@
 	</div>
 
 
+	<!-- <script src="app.js"></script> -->
 	<script src="main.js"></script>
+
 </body>
 
 </html>

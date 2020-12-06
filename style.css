@@ -23,16 +23,14 @@ a,p{
 	font-family: 'MontserratReg', Arial, Helvetica, sans-serif;
 	font-weight: normal;
 }
-
+ul li{
+	list-style: none;
+}
 .container {
 	max-width: 1280px;
 	margin: 0 auto;
 	position: relative;
 }
-
-
-
-
 a{
 	font-family: 'MontserratReg', Arial, Helvetica, sans-serif;
 	text-decoration: none;
@@ -105,8 +103,6 @@ a{
 	display: flex;
 	padding: 40px 0 10px 0;
 }
-
-
 .prise-menu{
 	list-style: none;
 	padding-left: 15px;
@@ -114,23 +110,32 @@ a{
 }
 .memu-nav{
 	cursor: pointer;
-}
-.prise-menu ul li {
-	margin: 0;
-	list-style: none;
-	width: 200px;
-	padding-top: 5px;
 	position: relative;
 }
-/* .pris-none{
+.prise-menu ul li {
+	margin: 13px;
+	list-style: none;
+	width: 200px;
+	position: relative;
+}
+.nav-pris{
 	display: none;
-} */
-
-
-
-
-
-
+	position: absolute;
+}
+.pris-none{
+	display: block;
+	background: #d2cdcd;
+	border-radius: 5px;
+}
+.pris-none a{
+	padding-top: 10px;
+}
+.age-menu{
+	padding-left: 20px;
+}
+.age{
+	padding-left: 25px;
+}
 .filtor-title {
 	font-size: 18px;
 }
@@ -140,6 +145,9 @@ a{
 .btn {
 	font-size: 18px;
 	padding-left: 14px;
+}
+.btnRotete{
+	transform: rotateX(180deg);
 }
 /* body */
 /* title */
